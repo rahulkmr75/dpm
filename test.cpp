@@ -4,7 +4,7 @@
 #include "gradients.cpp"
 int main(){
     using namespace cv;
-    Mat bgr=imread("kate.jpg");
+    Mat bgr=imread("taj.jpg");
     Mat edge;
     gradient(bgr,edge,true);
     imshow("bgr",bgr);

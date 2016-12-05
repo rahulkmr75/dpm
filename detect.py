@@ -49,4 +49,6 @@ for imagePath in paths.list_images(args["images"]):
 	# show the output images
 	cv2.imshow("Before NMS", orig)
 	cv2.imshow("After NMS", image)
-	cv2.waitKey(0)
+	if cv2.waitKey(0) & 0xFF==ord('q'):
+	    break
+cv2.destroyAllWindows()
